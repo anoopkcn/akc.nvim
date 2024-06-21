@@ -16,10 +16,6 @@ return {
 		vim.keymap.set("n", "<leader>fj", builtin.jumplist, {})
 		vim.keymap.set("n", "<leader>fr", builtin.registers, {})
 		vim.keymap.set("n", "<leader>fm", builtin.marks, {})
-		-- git related
-		vim.keymap.set("n", "<leader>gs", builtin.git_status, {})
-		vim.keymap.set("n", "<leader>gb", builtin.git_branches, {})
-		vim.keymap.set("n", "<leader>gc", builtin.git_commits, {})
 		-- Shortcut for searching your Neovim configuration files
 		vim.keymap.set("n", "<leader>sn", function()
 			builtin.find_files({ cwd = vim.fn.stdpath("config") })
