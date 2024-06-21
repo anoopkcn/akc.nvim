@@ -1,7 +1,7 @@
-require("options")
-require("keymaps")
+-- Neovim configuration file
+-- Author: @anoopkcn
+-- License: MIT
 
--- Lazy Plugin Manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	vim.fn.system({
@@ -15,5 +15,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+require("options")
+require("keymaps")
 require("lazy").setup("plugins")
+
+vim.cmd.colorscheme("onedark")
 
