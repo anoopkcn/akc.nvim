@@ -3,6 +3,6 @@ return {
 	depends = {
 		"nvim-lua/plenary.nvim",
 	},
-	enabled = true,
+	enabled = false,
 	config = true,
 }
