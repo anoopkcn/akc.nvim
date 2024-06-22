@@ -1,7 +1,7 @@
--- https://github.com/neovim/nvim-lspconfig
-
+-- Confuration for LSP (Language Server Protocol) and autocomplete plugin
+-- They dont need to be connected but LSP capbilities are used in autocomplete
 return {
-	"neovim/nvim-lspconfig",
+	"neovim/nvim-lspconfig", -- https://github.com/neovim/nvim-lspconfig
 	dependencies = {
 		-- LSP Server Manager
 		"williamboman/mason.nvim", -- https://github.com/williamboman/mason.nvim
