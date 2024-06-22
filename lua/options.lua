@@ -8,6 +8,7 @@ vim.opt.cursorline = true -- highlight cursor line
 vim.opt.incsearch = true -- incremental search
 vim.opt.ignorecase = true -- case insensitive search
 vim.opt.clipboard = "unnamedplus" -- combine OS clipboard with vim
+vim.opt.termguicolors = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
