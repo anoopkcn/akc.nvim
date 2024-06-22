@@ -1,3 +1,4 @@
+-- https://github.com/joshdick/onedark.vim
 return {
 	"joshdick/onedark.vim",
 	name = "onedark",
