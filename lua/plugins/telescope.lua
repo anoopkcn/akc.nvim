@@ -18,7 +18,7 @@ return {
 		vim.keymap.set("n", "<leader>fr", builtin.registers, {})
 		vim.keymap.set("n", "<leader>fm", builtin.marks, {})
 		-- git related
-		vim.keymap.set("n", "<leader>gs", builtin.git_status, {})
+		-- vim.keymap.set("n", "<leader>gs", builtin.git_status, {}) -- This is handled by Fugitive
 		vim.keymap.set("n", "<leader>gc", builtin.git_commits, {})
 		vim.keymap.set("n", "<leader>gb", builtin.git_branches, {})
 		vim.keymap.set("n", "<leader>gl", builtin.git_bcommits, {})
