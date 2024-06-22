@@ -2,7 +2,7 @@
 Phylosophy: 
 - keep it small
 - If you have to check how a plugin works, when you use it, you don't need that plugin.
-- Setup and forget plugins are awesome as long as you forget about them. 
+- "Setup and forget" plugins are awesome as long as you forget about them. 
 
 ## Requirements
 - [ NeoVim ](https://neovim.io) (>= 0.10)
@@ -27,7 +27,7 @@ Phylosophy:
     - [onedark.nvim](https://github.com/joshdick/onedark.vim) (colorscheme)
     - [lualine](https://github.com/nvim-lualine/lualine.nvim) (statusline)
 
-- Setup and Forget plugins:
+- Setup and hopefully Forget plugins:
     - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (language server protocol configuration)
     - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting)
     - [copilot.nvim](https://github.com/github/copilot.vim) (snippet completion)
@@ -35,3 +35,4 @@ Phylosophy:
 
 - Disabled:
     - [nord.nvim](https://github.com/shaunsingh/nord.nvim) (colorscheme)
+
