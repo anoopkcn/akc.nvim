@@ -1,12 +1,10 @@
 # NeoVim setup
 Phylosophy: 
-
 - keep it small but it doesn't have to be simple
 - If you have to check how a plugin works, when you use it, you don't need that plugin.
 - Setup and forget plugins are awesome as long as you forget about them. 
 
 ## Requirements
-
 - [ NeoVim ](https://neovim.io) (>= 0.10)
     - Neovim is the editor
 - [Nerd Font](https://www.nerdfonts.com/) (optional)
@@ -15,7 +13,6 @@ Phylosophy:
     - Ripgrep is used for searching in files, it is faster than the default grep
 
 ## NeoVim Plugins
-
 - Plugin Manager:
     - [lazy.nvim](https://github.com/folke/lazy.nvim.git) (plugin manager)
 
@@ -34,6 +31,7 @@ Phylosophy:
     - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (language server protocol configuration)
     - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting)
     - [copilot.nvim](https://github.com/github/copilot.vim) (snippet completion)
+    - [conforms.nvim](https://github.com/stevearc/conform.nvim) (autoformatting)
 
 - Disabled:
     - [nord.nvim](https://github.com/shaunsingh/nord.nvim) (colorscheme)
