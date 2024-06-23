@@ -13,6 +13,7 @@ Philosophy:
     - Ripgrep is used for searching in files, it is faster than the default grep. *Everything should work without it but not as fast.*
 
 ## Folder Structure
+```bash
 .
 ├── README.md
 ├── init.lua
@@ -22,7 +23,7 @@ Philosophy:
     ├── options.lua
     └── plugins
         └──*.lua
-
+```
  [lazy.nvim](https://github.com/folke/lazy.nvim.git) plugin is used as the package manager and it is initialised with the following in the `lazyinit.lua` file.
 ```lua
 require("lazy").setup({ { import = "plugins" } })
