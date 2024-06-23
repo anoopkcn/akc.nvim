@@ -18,5 +18,5 @@ vim.opt.scrolloff = 3
 
 if vim.fn.has("Mac") == 1 then
 	vim.opt.linebreak = true
-	vim.opt.showbreak = "⤷ " -- Only works for Mac
+	vim.opt.showbreak = "⤷ "
 end
