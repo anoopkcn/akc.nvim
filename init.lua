@@ -2,13 +2,11 @@
 -- Author: @anoopkcn
 -- License: MIT
 -- Refer to README.md for more information
-
 require("core.options")
 require("core.keymaps")
 
 -- Lazy plugin manager
 -- https://github.com/folke/lazy.nvim.git
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	vim.fn.system({

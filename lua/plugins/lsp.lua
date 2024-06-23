@@ -8,7 +8,6 @@ return {
 		"hrsh7th/cmp-nvim-lsp", -- https://github.com/hrsh7th/cmp-nvim-lsp
 		"hrsh7th/cmp-path", -- https://github.com/hrsh7th/cmp-path
 		"hrsh7th/cmp-buffer", -- https://github.com/hrsh7th/cmp-buffer
-		"hrsh7th/cmp-cmdline", -- https://github.com/hrsh7th/cmp-cmdline
 	},
 	config = function()
 		local lspconfig = require("lspconfig")
@@ -20,7 +19,7 @@ return {
 			"force",
 			{},
 			vim.lsp.protocol.make_client_capabilities(), -- default capabilities
-			cmp_lsp.default_capabilities() -- nvim-cmp capabilities
+			cmp_lsp.default_capabilities()      -- nvim-cmp capabilities
 		)
 
 		-- lspconfig setup for each language server
@@ -49,16 +48,12 @@ return {
 				["<C-Space>"] = cmp.mapping.complete(),
 			}),
 			-- load sources for autocomplete that is from buffers and lsp servers
-			sources = cmp.config.sources({ { name = "nvim_lsp" } }, { { name = "buffer" } }, { { name = "path" } }),
-		})
-
-		-- autocomplete for search
-		-- `/` cmdline setup.
-		cmp.setup.cmdline("/", {
-			mapping = cmp.mapping.preset.cmdline(),
 			sources = {
+				{ name = "nvim_lsp" },
 				{ name = "buffer" },
-			},
+				{ name = "path" },
+				{ name = "copilot", group_index = 2 }
+			}
 		})
 	end,
 }
