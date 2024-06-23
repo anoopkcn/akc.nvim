@@ -22,6 +22,7 @@ Philosophy:
     - [fugitive](https://github.com/tpope/vim-fugitive) (git integration)
     - [surround.nvim](https://github.com/kylechui/nvim-surround) (surround text objects)
     - [vim-unimpaired](https://github.com/tpope/vim-unimpaired) (pairs of mappings with `[` and `]` prepend)
+    - [harpoon](https://github.com/ThePrimeagen/harpoon) (project navigation/ buffer management)
 
 - Theme plugins:
     - [onedark.nvim](https://github.com/joshdick/onedark.vim) (colorscheme)

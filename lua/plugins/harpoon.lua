@@ -1,5 +1,5 @@
 return {
-	"ThePrimeagen/harpoon",
+	"ThePrimeagen/harpoon", -- https://github.com/ThePrimeagen/harpoon
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 	},
