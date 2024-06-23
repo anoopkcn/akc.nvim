@@ -27,6 +27,7 @@ return {
 			lua = { "stylua" },
 			python = { "black" },
 			javascript = { "prettier" },
+			markdown = { "mdformat" },
 		},
 	},
 }
