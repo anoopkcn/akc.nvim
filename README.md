@@ -57,6 +57,7 @@ All plugin specific configurations are stored in the `lua/plugins` folder.
   - [surround.nvim](https://github.com/kylechui/nvim-surround) (surround text objects)
   - [vim-unimpaired](https://github.com/tpope/vim-unimpaired) (pairs of mappings with `[` and `]` prepend)
   - [harpoon](https://github.com/ThePrimeagen/harpoon) (project navigation/ buffer management)
+  - [mason](https://github.com/williamboman/mason.nvim)(lsp,dap,formatter manager)
   - \[Trouble\] TODO (quickfix list and location list)
 
 - Theme plugins:
