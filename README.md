@@ -1,6 +1,6 @@
 # NeoVim setup
-Phylosophy: 
-- keep it small
+Philosophy: 
+- *keep it small*
 - If you have to check how a plugin works, when you use it, you don't need that plugin.
 - "Setup and forget" plugins are awesome as long as you forget about them. 
 
