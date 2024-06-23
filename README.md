@@ -10,9 +10,12 @@ Philosophy:
 
 - [NeoVim](https://neovim.io) (>= 0.10)
   - Editor you need. *One can edit without it but not as contentedly.*
-- [Nerd Font](https://www.nerdfonts.com/) (optional)
+
+## Optional Requirements
+
+- [Nerd Font](https://www.nerdfonts.com/)
   - Nerdfonts are used for icons. *Everything should work without it but not as pretty.*
-- [ripgrep](https://github.com/BurntSushi/ripgrep#installation) (optional)
+- [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
   - Ripgrep is used for searching in files, it is faster than the default grep. *Everything should work without it but not as fast.*
 
 ## Folder Structure
