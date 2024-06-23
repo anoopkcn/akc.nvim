@@ -15,24 +15,43 @@ Philosophy:
 ## Folder Structure
 ```bash
 .
+├── LICENSE
 ├── README.md
 ├── init.lua
+├── lazy-lock.json
 └── lua
-    ├── keymaps.lua
-    ├── lazyinit.lua
-    ├── options.lua
+    ├── core
+    │   ├── keymaps.lua
+    │   └── options.lua
     └── plugins
-        └──*.lua
+        ├── conforms.lua
+        ├── copilot.lua
+        ├── fugitive.lua
+        ├── gitsigns.lua
+        ├── harpoon.lua
+        ├── lspconfig.lua
+        ├── lualine.lua
+        ├── onedark.lua
+        ├── surround.lua
+        ├── telescope.lua
+        ├── treesitter.lua
+        └── unimpaired.lua
 ```
  [lazy.nvim](https://github.com/folke/lazy.nvim.git) plugin is used as the package manager and it is initialised with the following in the `lazyinit.lua` file.
 ```lua
-require("lazy").setup({ { import = "plugins" } })
+require("lazy").setup("plugins")
 ```
 All plugin specific configuration is stored in the `lua/plugins` folder. They are imported because of the `import="<foldername>"` configuration without the need to add individual item explicitly in the `lazy` configuration.
 
 ## NeoVim Plugins
 - Plugin Manager:
     - [lazy.nvim](https://github.com/folke/lazy.nvim.git) (plugin manager)
+
+- Setup and hopefully Forget plugins:
+    - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting)
+    - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (language server protocol configuration)
+    - [conforms.nvim](https://github.com/stevearc/conform.nvim) (autoformatting)
+    - [copilot.nvim](https://github.com/github/copilot.vim) (snippet completion)
 
 - Utility plugins:
     - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (fuzzy finder)
@@ -41,17 +60,10 @@ All plugin specific configuration is stored in the `lua/plugins` folder. They ar
     - [surround.nvim](https://github.com/kylechui/nvim-surround) (surround text objects)
     - [vim-unimpaired](https://github.com/tpope/vim-unimpaired) (pairs of mappings with `[` and `]` prepend)
     - [harpoon](https://github.com/ThePrimeagen/harpoon) (project navigation/ buffer management)
+    - [Trouble] TODO (quickfix list and location list)
 
 - Theme plugins:
     - [onedark.nvim](https://github.com/joshdick/onedark.vim) (colorscheme)
     - [lualine](https://github.com/nvim-lualine/lualine.nvim) (statusline)
 
-- Setup and hopefully Forget plugins:
-    - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (language server protocol configuration)
-    - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting)
-    - [copilot.nvim](https://github.com/github/copilot.vim) (snippet completion)
-    - [conforms.nvim](https://github.com/stevearc/conform.nvim) (autoformatting)
-
-- Disabled:
-    - [nord.nvim](https://github.com/shaunsingh/nord.nvim) (colorscheme)
 
