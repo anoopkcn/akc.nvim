@@ -1,16 +1,16 @@
 # NeoVim setup
 Philosophy: 
-- *keep it small*
-- If you have to check how a plugin works, when you use it, you don't need that plugin.
-- "Setup and forget" plugins are awesome as long as you forget about them. 
+- If you can't explain it, *you don't need it.*
+- If it becomes a chore to maintain, *you don't need it.*
+- If you have to lookup how it works more than once, *you don't need it.*
 
 ## Requirements
-- [ NeoVim ](https://neovim.io) (>= 0.10)
-    - Neovim is the editor
+- [NeoVim](https://neovim.io) (>= 0.10)
+    - Editor you need. *One can edit without it but not as contentedly.*
 - [Nerd Font](https://www.nerdfonts.com/) (optional)
-    - Nerdfonts are used for icons in the statusline and other plugins
+    - Nerdfonts are used for icons. *Everything should work without it but not as pretty.*
 - [ripgrep](https://github.com/BurntSushi/ripgrep#installation) (optional)
-    - Ripgrep is used for searching in files, it is faster than the default grep
+    - Ripgrep is used for searching in files, it is faster than the default grep. *Everything should work without it but not as fast.*
 
 ## NeoVim Plugins
 - Plugin Manager:
