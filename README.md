@@ -12,6 +12,23 @@ Philosophy:
 - [ripgrep](https://github.com/BurntSushi/ripgrep#installation) (optional)
     - Ripgrep is used for searching in files, it is faster than the default grep. *Everything should work without it but not as fast.*
 
+## Folder Structure
+.
+├── README.md
+├── init.lua
+└── lua
+    ├── keymaps.lua
+    ├── lazyinit.lua
+    ├── options.lua
+    └── plugins
+        └──*.lua
+
+ [lazy.nvim](https://github.com/folke/lazy.nvim.git) plugin is used as the package manager and it is initialised with the following in the `lazyinit.lua` file.
+```lua
+require("lazy").setup({ { import = "plugins" } })
+```
+All plugin specific configuration is stored in the `lua/plugins` folder. They are imported because of the `import="<foldername>"` configuration without the need to add individual item explicitly in the `lazy` configuration.
+
 ## NeoVim Plugins
 - Plugin Manager:
     - [lazy.nvim](https://github.com/folke/lazy.nvim.git) (plugin manager)
