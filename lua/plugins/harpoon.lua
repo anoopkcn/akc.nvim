@@ -14,7 +14,7 @@ return {
 		-- end)
 		vim.keymap.set("n", "<leader>a", function()
 			harpoon_mark.add_file()
-		end)
+		end, { desc = "Add file to harpoon" })
 		vim.keymap.set("n", "<leader>l", function()
 			harpoon_ui.toggle_quick_menu()
 		end)

@@ -15,27 +15,13 @@ Philosophy:
 ## Folder Structure
 ```bash
 .
-├── LICENSE
 ├── README.md
 ├── init.lua
-├── lazy-lock.json
 └── lua
     ├── core
-    │   ├── keymaps.lua
-    │   └── options.lua
+    │   └── *.lua
     └── plugins
-        ├── conforms.lua
-        ├── copilot.lua
-        ├── fugitive.lua
-        ├── gitsigns.lua
-        ├── harpoon.lua
-        ├── lspconfig.lua
-        ├── lualine.lua
-        ├── onedark.lua
-        ├── surround.lua
-        ├── telescope.lua
-        ├── treesitter.lua
-        └── unimpaired.lua
+        └── *.lua
 ```
  [lazy.nvim](https://github.com/folke/lazy.nvim.git) plugin is used as the package manager and it is initialised with the following in the `lazyinit.lua` file.
 ```lua
