@@ -27,17 +27,15 @@ Philosophy:
 └── lua
     ├── core
     │   └── *.lua
+    ├── colors
+    │   └── *.lua
     └── plugins
         └── *.lua
 ```
 
 [lazy.nvim](https://github.com/folke/lazy.nvim.git) plugin is used as the package manager and it is initialised with the following in the `init.lua` file.
 
-```lua
-require("lazy").setup("plugins")
-```
-
-All plugin specific configurations are stored in the `lua/plugins` folder.
+All plugin specific configurations are stored in the `lua/plugins` directory. All color/theme related configurations are stored in the `lua/colors` directory.
 
 ## NeoVim Plugins
 
@@ -65,5 +63,6 @@ All plugin specific configurations are stored in the `lua/plugins` folder.
 
 - Theme plugins:
 
-  - [onedark.nvim](https://github.com/joshdick/onedark.vim) (colorscheme)
+  - [onedark.nvim](https://github.com/joshdick/onedark.vim) (colorscheme) \[DISABLED\]
+  - [github](https://github.com/projekt0n/github-nvim-theme) (colorscheme)
   - [lualine](https://github.com/nvim-lualine/lualine.nvim) (statusline)

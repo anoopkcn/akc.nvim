@@ -20,7 +20,12 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("plugins")
+require("lazy").setup({
+	spec = {
+		{ import = "plugins" },
+		{ import = "colors" }
+	}
+})
 
 -- Statusline colors (from lualine plugin is managed in its own file)
-vim.cmd.colorscheme("onedark")
+vim.cmd.colorscheme("github_dark_dimmed")

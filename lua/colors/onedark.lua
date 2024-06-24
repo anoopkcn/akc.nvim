@@ -4,4 +4,5 @@ return {
 	name = "onedark",
 	lazy = false,
 	priority = 1000,
+	enabled = false,
 }
