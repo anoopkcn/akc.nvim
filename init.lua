@@ -2,6 +2,7 @@
 -- Author: @anoopkcn
 -- License: MIT
 -- Refer to README.md for more information
+
 require("core.options")
 require("core.keymaps")
 require("core.globals")
