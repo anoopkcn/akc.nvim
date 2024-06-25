@@ -8,11 +8,13 @@ return {
 		"hrsh7th/cmp-nvim-lsp", -- https://github.com/hrsh7th/cmp-nvim-lsp
 		"hrsh7th/cmp-path", -- https://github.com/hrsh7th/cmp-path
 		"hrsh7th/cmp-buffer", -- https://github.com/hrsh7th/cmp-buffer
+		"onsails/lspkind.nvim" -- https://github.com/onsails/lspkind.nvim?tab=readme-ov-file
 	},
 	config = function()
 		local lspconfig = require("lspconfig")
 		local cmp = require("cmp")
 		local cmp_lsp = require("cmp_nvim_lsp")
+		local lspkind = require('lspkind')
 
 		-- combine the default capabilities with the nvim-cmp capabilities
 		local capabilities = vim.tbl_deep_extend(
@@ -50,10 +52,24 @@ return {
 			-- load sources for autocomplete that is from buffers and lsp servers
 			sources = {
 				{ name = "nvim_lsp", group_index = 2 },
-				{ name = "buffer",   group_index = 2 },
+				{ name = "buffer",   group_index = 2, keyword_length = 4 },
 				{ name = "path",     group_index = 2 },
 				{ name = "copilot",  group_index = 2 }
-			}
+			},
+			formatting = {
+				format = lspkind.cmp_format({
+					mode = 'symbol',
+					maxwidth = 50,
+					show_labelDetails = true,
+					menu = ({
+						nvim_lsp = "[LSP]",
+						buffer = "[Buff]",
+						path = "[Path]",
+						copilot = "[Copi]",
+					})
+				})
+			},
+
 		})
 	end,
 }
