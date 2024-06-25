@@ -25,7 +25,10 @@ require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
 		{ import = "colors" }
-	}
+	},
+	change_detection = {
+		notify = false,
+	},
 })
 
 -- status line plugin should detect the colorscheme
