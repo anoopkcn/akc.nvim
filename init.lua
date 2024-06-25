@@ -25,7 +25,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
-		{ import = "colors" }
+		{ import = "colors" },
 	},
 	change_detection = {
 		notify = false,
