@@ -1,19 +1,23 @@
 -- https://github.com/nvim-telescope/telescope.nvim
 return {
 	"nvim-telescope/telescope.nvim",
+
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"folke/trouble.nvim",
 
 	},
+
 	config = function()
 		local telescope = require("telescope")
+		local builtin = require("telescope.builtin")
+
 		telescope.setup({
 			defaults = {
 				file_ignore_patterns = { "node_modules", "env", "venv", ".env" },
 			},
 		})
-		local builtin = require("telescope.builtin")
+
 		-- file related
 		vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 		vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
@@ -31,7 +35,6 @@ return {
 		vim.keymap.set("n", "<leader>ni", function()
 			builtin.find_files({ cwd = vim.fn.stdpath("config") })
 		end, { desc = "[N]eovim [I]nit files" })
-
 
 		-- Use this to add more results without clearing the trouble list
 		local add_to_trouble = require("trouble.sources.telescope").add
