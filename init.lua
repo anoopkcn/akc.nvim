@@ -28,4 +28,5 @@ require("lazy").setup({
 	}
 })
 
+-- lualine i.e the status line plugin should automatically detect the colorscheme
 vim.cmd.colorscheme("github_dark_dimmed")
