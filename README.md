@@ -39,17 +39,18 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
 
 ## NeoVim Plugins
 
-- Plugin Manager:
+- Manager Plugins:
 
   - [lazy.nvim](https://github.com/folke/lazy.nvim.git) (plugin manager)
-
-- Setup and hopefully Forget plugins:
-
-  - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting)
-  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (language server protocol configuration)
   - [mason](https://github.com/williamboman/mason.nvim)(lsp, dap, linter, formatter manager)
+
+- Auto-Plugins (Setup and hopefully Forget)
+
+  - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (auto-syntax highlighting)
+  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (auto-language server protocol)
+  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (auto-complete)
   - [conforms.nvim](https://github.com/stevearc/conform.nvim) (auto-formatting)
-  - [copilot.nvim](https://github.com/github/copilot.vim) (code generation and completion)
+  - [copilot.nvim](https://github.com/zbirenbaum/copilot.lua) (auto-completion)
 
 - Utility plugins:
 
@@ -77,3 +78,10 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
   - [github](https://github.com/projekt0n/github-nvim-theme) (colorscheme)
   - [lualine](https://github.com/nvim-lualine/lualine.nvim) (statusline)
   - [onedark.nvim](https://github.com/joshdick/onedark.vim) (colorscheme) \[DISABLED\]
+
+## Plugin configuration dependancy
+
+- Trouble + Telescope
+  - Trouble can recive telescope search results therefore this feature is activated
+- lspconfig + nvim-cmp
+  - autocomplete plugin `nvim-cmp` is using lsp results for it's autocompletion
