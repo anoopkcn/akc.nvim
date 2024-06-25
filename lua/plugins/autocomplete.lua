@@ -14,16 +14,14 @@ return {
 		-- reset some behaviors
 		vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
 
-		-- autocomplete setup
-		local cmp_select = { behavior = cmp.SelectBehavior.Select }
-
 		cmp.setup({
 			enabled = true,
 			mapping = cmp.mapping.preset.insert({
-				["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
-				["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
-				["<C-y>"] = cmp.mapping.confirm({ select = true }),
-				["<C-Space>"] = cmp.mapping.complete(),
+				["<C-p>"] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Select },
+				["<C-n>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Select },
+				["<C-y>"] = cmp.mapping(
+					cmp.mapping.confirm { behavior = cmp.SelectBehavior.Select, select = true },
+					{ "i", "c" })
 			}),
 
 			-- load sources for autocomplete that is from buffers and lsp servers
