@@ -4,6 +4,7 @@
 -- Refer to README.md for more information
 require("core.options")
 require("core.keymaps")
+require("core.globals")
 
 -- Lazy plugin manager
 -- https://github.com/folke/lazy.nvim.git
