@@ -50,7 +50,7 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
   - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (auto-language server protocol)
   - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (auto-complete)
   - [conforms.nvim](https://github.com/stevearc/conform.nvim) (auto-formatting)
-  - [copilot.nvim](https://github.com/zbirenbaum/copilot.lua) (auto-completion)
+  - [copilot.nvim](https://github.com/zbirenbaum/copilot.lua) (auto-ai-completion)
 
 - Utility plugins:
 
