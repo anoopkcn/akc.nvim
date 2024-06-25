@@ -3,7 +3,6 @@
 return {
 	"neovim/nvim-lspconfig", -- https://github.com/neovim/nvim-lspconfig
 	dependencies = {
-		-- Autocomplete Plugin:
 		"hrsh7th/nvim-cmp", -- https://github.com/hrsh7th/nvim-cmp
 		"hrsh7th/cmp-nvim-lsp", -- https://github.com/hrsh7th/cmp-nvim-lsp
 		"hrsh7th/cmp-path", -- https://github.com/hrsh7th/cmp-path
