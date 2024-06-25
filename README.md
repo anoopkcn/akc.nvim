@@ -47,19 +47,27 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
 
   - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting)
   - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (language server protocol configuration)
+  - [mason](https://github.com/williamboman/mason.nvim)(lsp, dap, linter, formatter manager)
   - [conforms.nvim](https://github.com/stevearc/conform.nvim) (auto-formatting)
   - [copilot.nvim](https://github.com/github/copilot.vim) (code generation and completion)
+  - [trouble.nvim](https://github.com/folke/trouble.nvim) (quickfix list and location list)
 
 - Utility plugins:
 
-  - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (fuzzy finder)
-  - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) (gutter git signs)
-  - [fugitive](https://github.com/tpope/vim-fugitive) (git integration)
-  - [surround.nvim](https://github.com/kylechui/nvim-surround) (surround text objects)
-  - [vim-unimpaired](https://github.com/tpope/vim-unimpaired) (pairs of mappings with `[` and `]` prepend)
-  - [harpoon](https://github.com/ThePrimeagen/harpoon) (project navigation/ buffer management)
-  - [mason](https://github.com/williamboman/mason.nvim)(lsp, dap, linter, formatter manager)
-  - [trouble.nvim](https://github.com/folke/trouble.nvim) (quickfix list and location list)
+  - File navigation
+
+    - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (fuzzy finder)
+    - [harpoon](https://github.com/ThePrimeagen/harpoon) (project navigation/ buffer management)
+
+  - Git operations
+
+    - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) (gutter git signs)
+    - [fugitive](https://github.com/tpope/vim-fugitive) (git integration)
+
+  - Other tpope
+
+    - [surround.nvim](https://github.com/kylechui/nvim-surround) (surround text objects)
+    - [vim-unimpaired](https://github.com/tpope/vim-unimpaired) (pairs of mappings with `[` and `]` prepend)
 
 - Theme plugins:
 
