@@ -1,10 +1,13 @@
 -- https://github.com/folke/trouble.nvim
 return {
 	"folke/trouble.nvim",
+
 	opts = {
-		auto_close = true, -- close buffer when it's empty and diagnostics are gone
+		auto_close = true,
 	},
+
 	cmd = "Trouble",
+
 	keys = {
 		{
 			"<leader>tt",
