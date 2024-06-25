@@ -50,7 +50,6 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
   - [mason](https://github.com/williamboman/mason.nvim)(lsp, dap, linter, formatter manager)
   - [conforms.nvim](https://github.com/stevearc/conform.nvim) (auto-formatting)
   - [copilot.nvim](https://github.com/github/copilot.vim) (code generation and completion)
-  - [trouble.nvim](https://github.com/folke/trouble.nvim) (quickfix list and location list)
 
 - Utility plugins:
 
@@ -68,6 +67,10 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
 
     - [surround.nvim](https://github.com/kylechui/nvim-surround) (surround text objects)
     - [vim-unimpaired](https://github.com/tpope/vim-unimpaired) (pairs of mappings with `[` and `]` prepend)
+
+  - Bug navigation
+
+    - [trouble.nvim](https://github.com/folke/trouble.nvim) (quickfix list and location list)
 
 - Theme plugins:
 
