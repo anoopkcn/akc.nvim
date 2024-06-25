@@ -1,5 +1,6 @@
+-- https://github.com/stevearc/conform.nvim
 return {
-	"stevearc/conform.nvim", -- https://github.com/stevearc/conform.nvim
+	"stevearc/conform.nvim",
 	lazy = false,
 	keys = {
 		{
