@@ -47,7 +47,7 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
 
   - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (syntax highlighting)
   - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (language server protocol configuration)
-  - [conforms.nvim](https://github.com/stevearc/conform.nvim) (autoformatting)
+  - [conforms.nvim](https://github.com/stevearc/conform.nvim) (auto-formatting)
   - [copilot.nvim](https://github.com/github/copilot.vim) (code generation and completion)
 
 - Utility plugins:
@@ -59,10 +59,10 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
   - [vim-unimpaired](https://github.com/tpope/vim-unimpaired) (pairs of mappings with `[` and `]` prepend)
   - [harpoon](https://github.com/ThePrimeagen/harpoon) (project navigation/ buffer management)
   - [mason](https://github.com/williamboman/mason.nvim)(lsp, dap, linter, formatter manager)
-  - \[Trouble\] TODO (quickfix list and location list)
+  - [trouble.nvim](https://github.com/folke/trouble.nvim) (quickfix list and location list)
 
 - Theme plugins:
 
-  - [onedark.nvim](https://github.com/joshdick/onedark.vim) (colorscheme) \[DISABLED\]
   - [github](https://github.com/projekt0n/github-nvim-theme) (colorscheme)
   - [lualine](https://github.com/nvim-lualine/lualine.nvim) (statusline)
+  - [onedark.nvim](https://github.com/joshdick/onedark.vim) (colorscheme) \[DISABLED\]
