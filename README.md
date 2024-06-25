@@ -77,6 +77,7 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
 
   - [github](https://github.com/projekt0n/github-nvim-theme) (colorscheme)
   - [lualine](https://github.com/nvim-lualine/lualine.nvim) (statusline)
+  - [Zenmode](https://github.com/folke/zen-mode.nvim) (Zenmode)
   - [onedark.nvim](https://github.com/joshdick/onedark.vim) (colorscheme) \[DISABLED\]
 
 ## Plugin configuration dependancy
