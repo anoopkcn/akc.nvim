@@ -84,5 +84,5 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
 
 - Trouble + Telescope
   - Trouble can recive telescope search results therefore this feature is activated
-- lspconfig + nvim-cmp
+- lspconfig + nvim-lsp-cmp
   - autocomplete plugin `nvim-cmp` is using lsp results for it's autocompletion
