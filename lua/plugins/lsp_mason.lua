@@ -1,11 +1,13 @@
 -- Confuration for LSP (Language Server Protocol) and Manager(Mason)
 return {
 	"neovim/nvim-lspconfig",
+
 	dependencies = {
 		"williamboman/mason.nvim", -- https://github.com/williamboman/mason.nvim
 		"williamboman/mason-lspconfig.nvim",
 		"hrsh7th/cmp-nvim-lsp", -- https://github.com/hrsh7th/cmp-nvim-lsp
 	},
+
 	config = function()
 		local lspconfig = require("lspconfig")
 		local mason = require("mason")
@@ -40,6 +42,7 @@ return {
 				},
 			},
 		})
+
 		vim.api.nvim_create_autocmd('LspAttach', {
 			desc = 'LSP actions',
 			callback = function()
@@ -64,6 +67,8 @@ return {
 				bufmap('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>')
 			end
 		})
+
+		-- lsp symbol definition window(activated by K) should have border and rounded corner
 		vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 			border = "rounded",
 		})
