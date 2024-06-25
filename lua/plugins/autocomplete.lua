@@ -1,10 +1,12 @@
 return {
-	"hrsh7th/nvim-cmp",  -- https://github.com/hrsh7th/nvim-cmp
+	"hrsh7th/nvim-cmp", -- https://github.com/hrsh7th/nvim-cmp
+
 	dependencies = {
 		"hrsh7th/cmp-path", -- https://github.com/hrsh7th/cmp-path
 		"hrsh7th/cmp-buffer", -- https://github.com/hrsh7th/cmp-buffer
 		"onsails/lspkind.nvim" -- https://github.com/onsails/lspkind.nvim
 	},
+
 	config = function()
 		local cmp = require("cmp")
 		local lspkind = require('lspkind')
@@ -14,6 +16,7 @@ return {
 
 		-- autocomplete setup
 		local cmp_select = { behavior = cmp.SelectBehavior.Select }
+
 		cmp.setup({
 			enabled = true,
 			mapping = cmp.mapping.preset.insert({
@@ -22,6 +25,7 @@ return {
 				["<C-y>"] = cmp.mapping.confirm({ select = true }),
 				["<C-Space>"] = cmp.mapping.complete(),
 			}),
+
 			-- load sources for autocomplete that is from buffers and lsp servers
 			sources = {
 				{ name = "nvim_lsp", group_index = 2 },
@@ -29,10 +33,12 @@ return {
 				{ name = "path",     group_index = 2 },
 				{ name = "copilot",  group_index = 2 }
 			},
+
 			window = {
 				documentation = cmp.config.window.bordered(),
 				completion = cmp.config.window.bordered(),
 			},
+
 			formatting = {
 				format = lspkind.cmp_format({
 					mode = 'symbol',
