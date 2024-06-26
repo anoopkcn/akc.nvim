@@ -29,8 +29,8 @@ return {
 
 	dependencies = {
 		"williamboman/mason.nvim", -- https://github.com/williamboman/mason.nvim
-		"williamboman/mason-lspconfig.nvim",
-		"WhoIsSethDaniel/mason-tool-installer.nvim", --https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim
+		"williamboman/mason-lspconfig.nvim", -- https://github.com/williamboman/mason-lspconfig.nvim
+		"WhoIsSethDaniel/mason-tool-installer.nvim", -- https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim
 		"hrsh7th/cmp-nvim-lsp", -- https://github.com/hrsh7th/cmp-nvim-lsp
 	},
 
