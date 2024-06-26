@@ -1,4 +1,5 @@
 -- Confuration for LSP (Language Server Protocol) and Manager(Mason)
+
 local servers = {
 	pyright = {},
 	rust_analyzer = {},
@@ -59,25 +60,25 @@ return {
 		vim.api.nvim_create_autocmd("LspAttach", {
 			desc = "LSP actions",
 			callback = function()
-				local _map = function(mode, lhs, rhs)
+				local map = function(mode, lhs, rhs)
 					local opts = { buffer = true }
 					vim.keymap.set(mode, lhs, rhs, opts)
 				end
 
 				-- Displays hover information about the symbol under the cursor
-				_map("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>")
+				map("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>")
 
 				-- Jump to the definition
-				_map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>")
+				map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>")
 
 				-- Jump to declaration
-				_map("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<cr>")
+				map("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<cr>")
 
 				-- Lists all the references
-				_map("n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>")
+				map("n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>")
 
 				-- Renames all references to the symbol under the cursor
-				_map("n", "<F2>", "<cmd>lua vim.lsp.buf.rename()<cr>")
+				map("n", "<F2>", "<cmd>lua vim.lsp.buf.rename()<cr>")
 			end,
 		})
 

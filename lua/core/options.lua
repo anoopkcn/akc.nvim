@@ -9,9 +9,9 @@ vim.opt.cursorline = true
 vim.opt.incsearch = true
 vim.opt.ignorecase = true
 vim.opt.clipboard = "unnamedplus" --combine system clipboard with vim clipboard
-vim.opt.termguicolors = true      -- enable 24-bit RGB colors
-vim.opt.mouse = "a"               -- enable mouse support
-vim.opt.signcolumn = "yes"        -- extra space in the gutter for signs
+-- vim.opt.termguicolors = true -- enable 24-bit RGB colors
+vim.opt.mouse = "a" -- enable mouse support
+vim.opt.signcolumn = "yes" -- extra space in the gutter for signs
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4

@@ -5,7 +5,6 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"folke/trouble.nvim",
-
 	},
 
 	config = function()
