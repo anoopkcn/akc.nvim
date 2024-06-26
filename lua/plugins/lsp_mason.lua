@@ -2,7 +2,6 @@
 local servers = {
 	pyright = {},
 	rust_analyzer = {},
-	-- tsserver = {},
 	lua_ls = {
 		-- capabilities = {},
 		settings = {
@@ -17,6 +16,7 @@ local servers = {
 			},
 		},
 	},
+	-- tsserver = {},
 }
 
 local tools = {
