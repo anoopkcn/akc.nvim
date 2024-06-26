@@ -58,27 +58,50 @@ return {
 		})
 
 		vim.api.nvim_create_autocmd("LspAttach", {
+			group = vim.api.nvim_create_augroup("first-lsp-attach", { clear = true }),
 			desc = "LSP actions",
-			callback = function()
-				local map = function(mode, lhs, rhs)
-					local opts = { buffer = true }
-					vim.keymap.set(mode, lhs, rhs, opts)
+
+			callback = function(event)
+				local map = function(keys, func, desc)
+					vim.keymap.set("n", keys, func, { buffer = event.buf, desc = "LSP: " .. desc })
 				end
 
-				-- Displays hover information about the symbol under the cursor
-				map("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>")
+				map("gd", require("telescope.builtin").lsp_definitions, "[G]oto [D]efinitions")
+				map("gr", require("telescope.builtin").lsp_references, "[G]oto [R]eferences")
+				map("gi", require("telescope.builtin").lsp_implementations, "[G]oto [I]mplementations")
+				map("gD", vim.lsp.buf.declaration, "Goto [D]eclaration")
+				map("<leader>ds", require("telescope.builtin").lsp_document_symbols, "[D]ocument [S]ymbols")
+				map("<leader>ws", require("telescope.builtin").lsp_workspace_symbols, "[W]orkspace [S]ymbols")
+				map("<leader>D", require("telescope.builtin").lsp_type_definitions, "Type [D]efinitions")
+				map("K", vim.lsp.buf.hover, "Hover Documentation")
+				map("<leader>rn", vim.lsp.buf.rename, "Rename Symbol")
 
-				-- Jump to the definition
-				map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>")
+				-- When you move your cursor, the highlights will be cleared (the second autocommand).
+				local client = vim.lsp.get_client_by_id(event.data.client_id)
 
-				-- Jump to declaration
-				map("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<cr>")
+				if client and client.server_capabilities.documentHighlightProvider then
+					local highlight_augroup = vim.api.nvim_create_augroup("first-lsp-highlight", { clear = false })
 
-				-- Lists all the references
-				map("n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>")
+					vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+						buffer = event.buf,
+						group = highlight_augroup,
+						callback = vim.lsp.buf.document_highlight,
+					})
 
-				-- Renames all references to the symbol under the cursor
-				map("n", "<F2>", "<cmd>lua vim.lsp.buf.rename()<cr>")
+					vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
+						buffer = event.buf,
+						group = highlight_augroup,
+						callback = vim.lsp.buf.clear_references,
+					})
+
+					vim.api.nvim_create_autocmd("LspDetach", {
+						group = vim.api.nvim_create_augroup("first-lsp-detach", { clear = true }),
+						callback = function(event2)
+							vim.lsp.buf.clear_references()
+							vim.api.nvim_clear_autocmds({ group = "first-lsp-highlight", buffer = event2.buf })
+						end,
+					})
+				end
 			end,
 		})
 
