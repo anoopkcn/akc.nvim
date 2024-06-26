@@ -22,10 +22,12 @@ return {
 				},
 				lualine_b = {},
 				lualine_c = {},
-				lualine_x = { {
-					"datetime",
-					style = "default",
-				} },
+				lualine_x = {
+					{
+						"datetime",
+						style = "%H:%M",
+					},
+				},
 				lualine_y = {},
 				lualine_z = {},
 			},
