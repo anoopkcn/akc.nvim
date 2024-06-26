@@ -1,6 +1,7 @@
 -- https://github.com/ThePrimeagen/harpoon
 return {
 	"ThePrimeagen/harpoon",
+	enabled = false,
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 	},
