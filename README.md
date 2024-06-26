@@ -51,6 +51,7 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
   - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (auto-complete)
   - [conforms.nvim](https://github.com/stevearc/conform.nvim) (auto-formatting)
   - [copilot.nvim](https://github.com/zbirenbaum/copilot.lua) (auto-ai-completion)
+  - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) (gutter git signs)
 
 - Utility plugins:
 
@@ -59,15 +60,12 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
     - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (fuzzy finder)
     - [harpoon](https://github.com/ThePrimeagen/harpoon) (project navigation/ buffer management)
 
-  - Git operations
+  - tpope
 
-    - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) (gutter git signs)
+    - [sleuth](https://github.com/tpope/vim-sleuth)(trating tab respectfuly)
+    - [surround](https://github.com/kylechui/nvim-surround) (surround text objects)
+    - [unimpaired](https://github.com/tpope/vim-unimpaired) (pairs of mappings with `[` and `]` prepend)
     - [fugitive](https://github.com/tpope/vim-fugitive) (git integration)
-
-  - Other tpope
-
-    - [surround.nvim](https://github.com/kylechui/nvim-surround) (surround text objects)
-    - [vim-unimpaired](https://github.com/tpope/vim-unimpaired) (pairs of mappings with `[` and `]` prepend)
 
   - Bug navigation
 
@@ -77,8 +75,6 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
 
   - [github](https://github.com/projekt0n/github-nvim-theme) (colorscheme)
   - [lualine](https://github.com/nvim-lualine/lualine.nvim) (statusline)
-  - [Zenmode](https://github.com/folke/zen-mode.nvim) (Zenmode)
-  - [onedark.nvim](https://github.com/joshdick/onedark.vim) (colorscheme) \[DISABLED\]
 
 ## Plugin configuration dependancy
 
