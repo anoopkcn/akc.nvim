@@ -19,7 +19,7 @@ local servers = {
 	-- tsserver = {},
 }
 
-local tools = {
+local lang_tools = {
 	"stylua", -- Used to format Lua code
 	"black", -- Used to format Python code
 }
@@ -38,7 +38,7 @@ return {
 		require("mason").setup()
 
 		local ensure_installed = vim.tbl_keys(servers or {})
-		vim.list_extend(ensure_installed, tools)
+		vim.list_extend(ensure_installed, lang_tools)
 
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
