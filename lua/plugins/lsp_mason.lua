@@ -1,4 +1,24 @@
 -- Confuration for LSP (Language Server Protocol) and Manager(Mason)
+local servers = {
+	pyright = {},
+	rust_analyzer = {},
+	-- tsserver = {},
+	lua_ls = {
+		-- capabilities = {},
+		settings = {
+			Lua = {
+				completion = {
+					callSnippet = "Replace",
+				},
+				diagnostics = {
+					globals = { "vim" },
+					-- disable = { 'missing-fields' }
+				},
+			},
+		},
+	},
+}
+
 return {
 	"neovim/nvim-lspconfig",
 
@@ -10,26 +30,6 @@ return {
 	},
 
 	config = function()
-		local servers = {
-			pyright = {},
-			rust_analyzer = {},
-			-- tsserver = {},
-			lua_ls = {
-				-- capabilities = {},
-				settings = {
-					Lua = {
-						completion = {
-							callSnippet = "Replace",
-						},
-						diagnostics = {
-							globals = { "vim" },
-							-- disable = { 'missing-fields' }
-						},
-					},
-				},
-			},
-		}
-
 		require("mason").setup()
 
 		local ensure_installed = vim.tbl_keys(servers or {})
