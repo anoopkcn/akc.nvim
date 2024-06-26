@@ -60,12 +60,10 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
     - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (fuzzy finder)
     - [harpoon](https://github.com/ThePrimeagen/harpoon) (project navigation/ buffer management)
   
-  - Collection
-    - [mini](https://github.com/echasnovski/mini.nvim) (collection of tools)
-
-  - tpope
+  - Utils
 
     - [sleuth](https://github.com/tpope/vim-sleuth)(trating tab respectfuly)
+    - [surround](https://github.com/kylechui/nvim-surround) (surround text objects)
     - [unimpaired](https://github.com/tpope/vim-unimpaired) (pairs of mappings with `[` and `]` prepend)
     - [fugitive](https://github.com/tpope/vim-fugitive) (git integration)
 

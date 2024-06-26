@@ -1,6 +1,7 @@
 return {
 	{
 		"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
+		enabled = true,
 	},
 	{
 		"tpope/vim-fugitive",
@@ -11,9 +12,9 @@ return {
 	},
 	{
 		"kylechui/nvim-surround",
+		enabled = true,
 		version = "*",
 		event = "VeryLazy",
-		enabled = true,
 		config = true,
 	},
 	{
