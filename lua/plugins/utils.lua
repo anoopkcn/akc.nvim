@@ -1,6 +1,7 @@
 return {
 	{
-		"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
+		-- Detect tabstop and shiftwidth automatically
+		"tpope/vim-sleuth",
 		enabled = true,
 	},
 	{
@@ -19,6 +20,10 @@ return {
 	},
 	{
 		"tpope/vim-unimpaired",
+		enabled = true,
+	},
+	{
+		"tpope/vim-repeat",
 		enabled = true,
 	},
 }
