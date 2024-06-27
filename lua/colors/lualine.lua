@@ -1,4 +1,5 @@
 -- https://github.com/nvim-lualine/lualine.nvim
+
 return {
 	"nvim-lualine/lualine.nvim",
 	enabled = true,
@@ -18,6 +19,11 @@ return {
 				lualine_a = {
 					{
 						"buffers",
+						symbols = {
+							modified = " +",
+							alternate_file = "",
+							directory = "",
+						},
 					},
 				},
 				lualine_b = {},
