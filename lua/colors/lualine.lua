@@ -9,7 +9,7 @@ return {
 			sections = {
 				lualine_a = {},
 				lualine_b = { "mode", "diagnostics" },
-				lualine_c = { "branch", "diff", "searchcount", "filename" },
+				lualine_c = { "branch", "diff", "filename", "searchcount" },
 				lualine_x = { "encoding", "fileformat", "filetype", "progress" },
 				lualine_y = { "location" },
 				lualine_z = {},
