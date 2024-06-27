@@ -8,9 +8,9 @@ return {
 		require("lualine").setup({
 			sections = {
 				lualine_a = {},
-				lualine_b = { "mode", "diagnostics" },
-				lualine_c = { "branch", "diff", "filename", "searchcount" },
-				lualine_x = { "filetype", "progress" },
+				lualine_b = { "mode" },
+				lualine_c = { "filename", "searchcount" },
+				lualine_x = { "diagnostics", "encoding", "filetype", "progress" }, --  "encoding", "fileformat"
 				lualine_y = { "location" },
 				lualine_z = {},
 			},
@@ -22,13 +22,8 @@ return {
 				},
 				lualine_b = {},
 				lualine_c = {},
-				lualine_x = {
-					{
-						"datetime",
-						style = "%H:%M",
-					},
-				},
-				lualine_y = {},
+				lualine_x = {},
+				lualine_y = { "diff", "branch", "fileformat" },
 				lualine_z = {},
 			},
 		})
