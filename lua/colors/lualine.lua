@@ -10,7 +10,7 @@ return {
 				lualine_a = {},
 				lualine_b = { "mode" },
 				lualine_c = { "filename", "searchcount" },
-				lualine_x = { "diagnostics", "encoding", "filetype", "progress" }, --  "encoding", "fileformat"
+				lualine_x = { "diagnostics", "encoding", "filetype", "progress" },
 				lualine_y = { "location" },
 				lualine_z = {},
 			},
