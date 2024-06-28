@@ -58,7 +58,6 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
 - [copilot](https://github.com/zbirenbaum/copilot.lua)(ai auto-completion)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)(multi purpose navigation)
 - [oil.nvim](https://github.com/stevearc/oil.nvim)(file explorer)
-- [lazy.nvim](https://github.com/folke/lazy.nvim.git)
 
 ## Plugin configuration dependancy
 
