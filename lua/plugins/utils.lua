@@ -1,17 +1,21 @@
 return {
 	{
+		-- [vim-unimpaired](https://github.com/tpope/vim-unimpaired)(sensible [ and ] commands)
 		"tpope/vim-unimpaired",
 		enabled = true,
 	},
 	{
+		-- [vim-surround](https://github.com/tpope/vim-surround)(surround text with pairs)
 		"tpope/vim-sleuth",
 		enabled = true,
 	},
 	{
+		-- [vim-repeat](https://github.com/tpope/vim-repeat)(repeat motions with dot)
 		"tpope/vim-repeat",
 		enabled = true,
 	},
 	{
+		-- [vim-commentary](https://github.com/tpope/vim-fugitive)(best git plugin)
 		"tpope/vim-fugitive",
 		enabled = true,
 		config = function()
@@ -19,6 +23,7 @@ return {
 		end,
 	},
 	{
+		-- [mini.ai](https://github.come/chasnovski/mini.ai)(better `a` and `i`)
 		"echasnovski/mini.ai",
 		version = "*",
 		enabled = true,
@@ -27,6 +32,7 @@ return {
 		end,
 	},
 	{
+		-- [mini.surround](https://github.com/echasnovski/mini.surround)(surround text with pairs)
 		"echasnovski/mini.surround",
 		version = "*",
 		enabled = true,
@@ -35,6 +41,7 @@ return {
 		end,
 	},
 	{
+		-- [mini.pair](https://github.com/echasnovski/mini.pair)(surround text with pairs)
 		"echasnovski/mini.pairs",
 		version = "*",
 		enabled = true,

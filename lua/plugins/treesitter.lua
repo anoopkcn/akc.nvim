@@ -1,4 +1,4 @@
--- https://github.com/nvim-treesitter/nvim-treesitter
+-- [nvm-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)(code highlighting)
 return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",

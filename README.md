@@ -39,41 +39,26 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
 
 ## NeoVim Plugins
 
-- Manager Plugins:
+<!--rg "\[.*\]\(.*\)" | grep "\-\- \[.*\]\(.*\)" | awk -F'\-\-' ' {print "-" $NF}'-->
 
-  - [lazy.nvim](https://github.com/folke/lazy.nvim.git) (plugin manager)
-  - [mason](https://github.com/williamboman/mason.nvim)(lsp, dap, linter, formatter manager)
-
-- Auto-Plugins (Setup and hopefully Forget)
-
-  - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (auto-syntax highlighting)
-  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (auto-language server protocol)
-  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (auto-complete)
-  - [conforms.nvim](https://github.com/stevearc/conform.nvim) (auto-formatting)
-  - [copilot.nvim](https://github.com/zbirenbaum/copilot.lua) (auto-ai-completion)
-
-- Utility plugins:
-
-  - File navigation
-
-    - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (fuzzy finder)
-    - [harpoon](https://github.com/ThePrimeagen/harpoon) (project navigation/ buffer management)
-
-  - Utils
-
-    - [sleuth](https://github.com/tpope/vim-sleuth)(trating tab respectfuly)
-    - [surround](https://github.com/kylechui/nvim-surround) (surround text objects)
-    - [unimpaired](https://github.com/tpope/vim-unimpaired) (pairs of mappings with `[` and `]` prepend)
-    - [fugitive](https://github.com/tpope/vim-fugitive) (git integration)
-    - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) (gutter git signs)
-
-  - Bug navigation
-
-    - [trouble.nvim](https://github.com/folke/trouble.nvim) (quickfix list and location list)
-
-- Theme plugins:
-
-  - [github](https://github.com/projekt0n/github-nvim-theme) (colorscheme)
+- [harpoon](https://github.com/ThePrimeagen/harpoon)(buffer navigation)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (auto-completion)
+- [nvm-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)(code highlighting)
+- [vim-unimpaired](https://github.com/tpope/vim-unimpaired)(sensible [ and ] commands)
+- [vim-surround](https://github.com/tpope/vim-surround)(surround text with pairs)
+- [vim-repeat](https://github.com/tpope/vim-repeat)(repeat motions with dot)
+- [vim-commentary](https://github.com/tpope/vim-fugitive)(best git plugin)
+- [mini.ai](https://github.come/chasnovski/mini.ai)(better `a` and `i`)
+- [mini.surround](https://github.com/echasnovski/mini.surround)(surround text with pairs)
+- [mini.pair](https://github.com/echasnovski/mini.pair)(surround text with pairs)
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)(gutter signs for git)
+- [conform.nvim](https://github.com/stevearc/conform.nvim)(auto-formatting)
+- [lazy.nvim](https://github.com/folke/lazy.nvim.git) (plugin manager)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)(better quick fix list)
+- [copilot](https://github.com/zbirenbaum/copilot.lua)(ai auto-completion)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)(multi purpose navigation)
+- [oil.nvim](https://github.com/stevearc/oil.nvim)(file explorer)
+- [lazy.nvim](https://github.com/folke/lazy.nvim.git)
 
 ## Plugin configuration dependancy
 
