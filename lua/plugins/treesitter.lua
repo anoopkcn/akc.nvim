@@ -1,7 +1,7 @@
 -- [nvm-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)(code highlighting)
 return {
 	"nvim-treesitter/nvim-treesitter",
-	build = ":TSUpdate",
+	build = ":TSUpdateSync",
 	opts = {
 		ensure_installed = {
 			"bash",
