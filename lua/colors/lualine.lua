@@ -9,9 +9,14 @@ return {
 		require("lualine").setup({
 			options = { fmt = string.lower },
 			sections = {
-				lualine_a = { "mode" },
+				lualine_a = { {
+					"mode",
+					fmt = function(str)
+						return str:sub(1, 1)
+					end,
+				} },
 				lualine_b = { "branch", "diff" },
-				lualine_c = {},
+				lualine_c = { },
 				lualine_x = { "diagnostics", "encoding", "filetype" },
 				lualine_y = { "progress" },
 				lualine_z = { "location" },
