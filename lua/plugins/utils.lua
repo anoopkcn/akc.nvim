@@ -1,7 +1,14 @@
 return {
 	{
-		-- Detect tabstop and shiftwidth automatically
+		"tpope/vim-unimpaired",
+		enabled = true,
+	},
+	{
 		"tpope/vim-sleuth",
+		enabled = true,
+	},
+	{
+		"tpope/vim-repeat",
 		enabled = true,
 	},
 	{
@@ -12,18 +19,29 @@ return {
 		end,
 	},
 	{
-		"kylechui/nvim-surround",
-		enabled = true,
+		"echasnovski/mini.ai",
 		version = "*",
-		event = "VeryLazy",
-		config = true,
+		enabled = true,
+		config = function()
+			require("mini.ai").setup()
+		end,
 	},
 	{
-		"tpope/vim-unimpaired",
+		"echasnovski/mini.surround",
+		version = "*",
 		enabled = true,
+		config = function()
+			require("mini.surround").setup()
+		end,
 	},
 	{
-		"tpope/vim-repeat",
+		"echasnovski/mini.pairs",
+		version = "*",
 		enabled = true,
+		config = function()
+			require("mini.pairs").setup({
+				modes = { insert = true, command = false, terminal = false },
+			})
+		end,
 	},
 }
