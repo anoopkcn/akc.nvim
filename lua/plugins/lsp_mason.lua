@@ -1,4 +1,4 @@
--- [lazy.nvim](https://github.com/folke/lazy.nvim.git) (plugin manager)
+-- [lazy.nvim](https://github.com/folke/lazy.nvim.git) (**plugin manager**)
 -- Configuration for LSP (Language Server Protocol) and Manager(Mason)
 
 local servers = {

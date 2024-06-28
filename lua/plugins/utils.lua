@@ -1,6 +1,6 @@
 return {
 	{
-		-- [vim-unimpaired](https://github.com/tpope/vim-unimpaired)(sensible [ and ] commands)
+		-- [vim-unimpaired](https://github.com/tpope/vim-unimpaired)(sensible `[` and `]` commands)
 		"tpope/vim-unimpaired",
 		enabled = true,
 	},
