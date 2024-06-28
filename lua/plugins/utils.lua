@@ -15,7 +15,7 @@ return {
 		enabled = true,
 	},
 	{
-		-- [vim-commentary](https://github.com/tpope/vim-fugitive)(best git plugin)
+		-- [vim-fugitive](https://github.com/tpope/vim-fugitive)(best git plugin)
 		"tpope/vim-fugitive",
 		enabled = true,
 		config = function()
@@ -23,7 +23,7 @@ return {
 		end,
 	},
 	{
-		-- [mini.ai](https://github.come/chasnovski/mini.ai)(better `a` and `i`)
+		-- [mini.ai](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-ai.md)(better `a` and `i`)
 		"echasnovski/mini.ai",
 		version = "*",
 		enabled = true,
@@ -32,7 +32,7 @@ return {
 		end,
 	},
 	{
-		-- [mini.surround](https://github.com/echasnovski/mini.surround)(surround text with pairs)
+		-- [mini.surround](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-surround.md)(surround text with pairs)
 		"echasnovski/mini.surround",
 		version = "*",
 		enabled = true,
