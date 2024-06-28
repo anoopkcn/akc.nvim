@@ -40,15 +40,4 @@ return {
 			require("mini.surround").setup()
 		end,
 	},
-	{
-		-- [mini.pair](https://github.com/echasnovski/mini.pair)(surround text with pairs)
-		"echasnovski/mini.pairs",
-		version = "*",
-		enabled = true,
-		config = function()
-			require("mini.pairs").setup({
-				modes = { insert = true, command = false, terminal = false },
-			})
-		end,
-	},
 }
