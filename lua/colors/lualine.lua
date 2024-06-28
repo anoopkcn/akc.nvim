@@ -9,12 +9,12 @@ return {
 		require("lualine").setup({
 			options = { fmt = string.lower },
 			sections = {
-				lualine_a = {},
-				lualine_b = { "mode" },
-				lualine_c = { "filename", "searchcount" },
-				lualine_x = { "diagnostics", "encoding", "filetype", "progress" },
-				lualine_y = { "location" },
-				lualine_z = {},
+				lualine_a = { "mode" },
+				lualine_b = { "branch", "diff" },
+				lualine_c = {},
+				lualine_x = { "diagnostics", "encoding", "filetype" },
+				lualine_y = { "progress" },
+				lualine_z = { "location" },
 			},
 			tabline = {
 				lualine_a = {
@@ -30,7 +30,7 @@ return {
 				lualine_b = {},
 				lualine_c = {},
 				lualine_x = {},
-				lualine_y = { "diff", "branch", "fileformat" },
+				lualine_y = { "fileformat" },
 				lualine_z = {},
 			},
 		})
