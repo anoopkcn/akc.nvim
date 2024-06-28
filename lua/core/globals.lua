@@ -6,7 +6,7 @@ end
 
 -- Highlight when yanking (copying) text
 vim.api.nvim_create_autocmd("TextYankPost", {
-	desc = "Highlight when yanking (copying) text",
+	desc = "Temporary highlight indicator when yanking (copying) text",
 	group = vim.api.nvim_create_augroup("akc-highlight-yank", { clear = true }),
 	callback = function()
 		vim.highlight.on_yank()

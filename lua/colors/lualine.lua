@@ -1,5 +1,11 @@
 -- https://github.com/nvim-lualine/lualine.nvim
 
+-- get count of buffers(total number of opend buffers)
+local get_nbuff = function()
+	local nbuff = #vim.fn.getbufinfo({ buflisted = 1 })
+	return nbuff
+end
+
 return {
 	"nvim-lualine/lualine.nvim",
 	enabled = true,
@@ -16,7 +22,7 @@ return {
 					end,
 				} },
 				lualine_b = { "branch", "diff" },
-				lualine_c = { },
+				lualine_c = {},
 				lualine_x = { "diagnostics", "encoding", "filetype" },
 				lualine_y = { "progress" },
 				lualine_z = { "location" },
@@ -36,7 +42,7 @@ return {
 				lualine_c = {},
 				lualine_x = {},
 				lualine_y = { "fileformat" },
-				lualine_z = {},
+				lualine_z = { get_nbuff },
 			},
 		})
 	end,
