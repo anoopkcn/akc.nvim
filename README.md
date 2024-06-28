@@ -41,23 +41,24 @@ All plugin specific configurations are stored in the `lua/plugins` directory. Al
 
 <!--rg "\[.*\]\(.*\)" | grep "\-\- \[.*\]\(.*\)" | awk -F'\-\-' ' {print "-" $NF}'-->
 
+- [lazy.nvim](https://github.com/folke/lazy.nvim.git) (**plugin manager**)
+- [mason.nvim](https://github.com/williamboman/mason.nvim)(**language server, formatter and dap manager**)
 - [harpoon](https://github.com/ThePrimeagen/harpoon)(buffer navigation)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)(better quick fix list)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (auto-completion)
-- [nvm-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)(code highlighting)
-- [vim-unimpaired](https://github.com/tpope/vim-unimpaired)(sensible [ and ] commands)
+- [vim-unimpaired](https://github.com/tpope/vim-unimpaired)(sensible `[` and `]` commands)
 - [vim-surround](https://github.com/tpope/vim-surround)(surround text with pairs)
 - [vim-repeat](https://github.com/tpope/vim-repeat)(repeat motions with dot)
 - [vim-commentary](https://github.com/tpope/vim-fugitive)(best git plugin)
 - [mini.ai](https://github.come/chasnovski/mini.ai)(better `a` and `i`)
 - [mini.surround](https://github.com/echasnovski/mini.surround)(surround text with pairs)
 - [mini.pair](https://github.com/echasnovski/mini.pair)(surround text with pairs)
-- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)(gutter signs for git)
-- [conform.nvim](https://github.com/stevearc/conform.nvim)(auto-formatting)
-- [lazy.nvim](https://github.com/folke/lazy.nvim.git) (plugin manager)
-- [trouble.nvim](https://github.com/folke/trouble.nvim)(better quick fix list)
-- [copilot](https://github.com/zbirenbaum/copilot.lua)(ai auto-completion)
+- [nvm-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)(code highlighting)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)(multi purpose navigation)
 - [oil.nvim](https://github.com/stevearc/oil.nvim)(file explorer)
+- [conform.nvim](https://github.com/stevearc/conform.nvim)(auto-formatting)
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)(gutter signs for git)
+- [copilot](https://github.com/zbirenbaum/copilot.lua)(ai auto-completion)
 
 ## Plugin configuration dependancy
 

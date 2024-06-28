@@ -1,4 +1,5 @@
 -- [lazy.nvim](https://github.com/folke/lazy.nvim.git) (**plugin manager**)
+-- [mason.nvim](https://github.com/williamboman/mason.nvim)(**language server, formatter and dap manager**)
 -- Configuration for LSP (Language Server Protocol) and Manager(Mason)
 
 local servers = {
