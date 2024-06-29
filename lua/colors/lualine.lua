@@ -13,7 +13,7 @@ return {
 
 	config = function()
 		require("lualine").setup({
-			options = { fmt = string.lower },
+			-- options = { fmt = string.lower },
 			sections = {
 				lualine_a = { {
 					"mode",
