@@ -23,22 +23,8 @@ return {
 		end,
 	},
 	{
-		-- [mini.ai](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-ai.md)(better `a` and `i`)
-		"echasnovski/mini.ai",
-		version = "*",
-		enabled = true,
-		config = function()
-			require("mini.ai").setup()
-		end,
-	},
-	{
-		-- [mini.surround](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-surround.md)(surround text with pairs)
-		"echasnovski/mini.surround",
-		version = "*",
-		enabled = true,
-		config = function()
-			require("mini.surround").setup()
-		end,
+		-- [surround](https://github.com/tpope/vim-surround)(surround motion for pairs)
+		"tpope/vim-surround",
 	},
 	{
 		-- [comment.nvim](https://github.com/numToStr/Comment.nvim) (add line/block comments easily)
