@@ -1,52 +1,18 @@
--- [lazy.nvim](https://github.com/folke/lazy.nvim.git) (**plugin manager**)
--- [mason.nvim](https://github.com/williamboman/mason.nvim)(**language server, formatter and dap manager**)
 -- Configuration for LSP (Language Server Protocol) and Manager(Mason)
+-- [lazy.nvim](https://github.com/folke/lazy.nvim.git) (**plugin manager**)
+-- [mason.nvim](https://github.com/williamboman/mason.nvim)(**language tools manager**)
 
-local servers = {
-	pyright = {},
-	rust_analyzer = {},
-	lua_ls = {
-		-- capabilities = {},
-		settings = {
-			Lua = {
-				completion = {
-					callSnippet = "Replace",
-				},
-				-- add 'folke/neodev.nvim' for vim,otherwise uncomment the following
-				--[[ 
-					diagnostics = {
-						globals = { "vim" },
-					 -- disable = { 'missing-fields' }
-					},
-				--]]
-			},
-		},
-	},
-	tsserver = {},
-}
-
-local lang_tools = {
-	-- also update the list in lua/plugins/formatter.lua
-	"stylua", -- Used to format Lua code
-	"black", -- Used to format Python code
-	"prettier", -- Used to format js, html, markdown, ts, css
-}
+local servers = { pyright = {}, rust_analyzer = {}, lua_ls = {}, tsserver = {} }
+local lang_tools = { "stylua", "black", "prettier" }
 
 return {
 	"neovim/nvim-lspconfig",
-
 	dependencies = {
-		{ "williamboman/mason.nvim", config = true }, -- https://github.com/williamboman/mason.nvim
-		"williamboman/mason-lspconfig.nvim", -- https://github.com/williamboman/mason-lspconfig.nvim
-		"WhoIsSethDaniel/mason-tool-installer.nvim", -- https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim
-		"hrsh7th/cmp-nvim-lsp", -- https://github.com/hrsh7th/cmp-nvim-lsp
-
-		-- Useful status updates for LSP.
-		-- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
+		{ "williamboman/mason.nvim", config = true },
+		{ "williamboman/mason-lspconfig.nvim" },
+		{ "WhoIsSethDaniel/mason-tool-installer.nvim" },
+		{ "hrsh7th/cmp-nvim-lsp" },
 		{ "j-hui/fidget.nvim", opts = {} },
-
-		-- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
-		-- used for completion, annotations and signatures of Neovim apis
 		{ "folke/neodev.nvim", opts = {} },
 	},
 
