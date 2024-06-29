@@ -21,9 +21,20 @@ return {
 						return str:sub(1, 1)
 					end,
 				} },
-				lualine_b = { "branch", "diff" },
+				lualine_b = {
+					{
+						"branch",
+						"diff",
+					},
+				},
 				lualine_c = {},
-				lualine_x = { "diagnostics", "encoding", "filetype" },
+				lualine_x = {
+					{
+						"diagnostics",
+						"encoding",
+						"filetype",
+					},
+				},
 				lualine_y = { "progress" },
 				lualine_z = { "location" },
 			},
@@ -31,6 +42,8 @@ return {
 				lualine_a = {
 					{
 						"buffers",
+						icons_enabled = false,
+						mode = 2,
 						symbols = {
 							modified = " +",
 							alternate_file = "",
