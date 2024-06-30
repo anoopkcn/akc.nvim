@@ -53,7 +53,6 @@ rg "\[.*\]\(.*\)" | grep "\-\- \[.*\]\(.*\)" | awk -F'\-\-' ' {print "-" $NF}'
 - [mason.nvim](https://github.com/williamboman/mason.nvim)(**language server, formatter and dap manager**)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (auto-completion)
 - [nvm-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)(code highlighting)
-- [oil.nvim](https://github.com/stevearc/oil.nvim)(file explorer)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)(multi purpose navigation)
 - [surround](https://github.com/tpope/vim-surround)(surround motion for pairs)
 - [trouble.nvim](https://github.com/folke/trouble.nvim)(better quick fix list)
