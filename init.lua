@@ -6,7 +6,6 @@
 require("core.options")
 require("core.keymaps")
 require("core.globals")
-
 require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
