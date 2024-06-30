@@ -21,6 +21,8 @@ vim.opt.smartindent = true
 vim.opt.path:append("**")
 vim.opt.updatetime = 250
 vim.opt.inccommand = "split" -- Preview substitutions live, as you type!
+-- set laststatus=3
+vim.opt.laststatus = 3
 
 if vim.fn.has("Mac") == 1 then
 	vim.opt.linebreak = true
