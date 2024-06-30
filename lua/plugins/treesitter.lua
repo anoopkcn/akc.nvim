@@ -3,6 +3,10 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdateSync",
+	event = { "BufReadPre", "BufNewFile" },
+	dependencies = {
+		"nvim-treesitter/nvim-treesitter-textobjects",
+	},
 	opts = {
 		ensure_installed = {
 			"bash",

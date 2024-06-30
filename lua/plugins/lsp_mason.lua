@@ -2,7 +2,24 @@
 -- [lazy.nvim](https://github.com/folke/lazy.nvim.git) (**plugin manager**)
 -- [mason.nvim](https://github.com/williamboman/mason.nvim)(**language tools manager**)
 
-local servers = { pyright = {}, rust_analyzer = {}, lua_ls = {}, tsserver = {} }
+local servers = {
+	-- clangd = {},
+	-- gopls = {},
+	pyright = {},
+	rust_analyzer = {
+		cmd = { "rustup", "run", "stable", "rust-analyzer" },
+	},
+	tsserver = {},
+	html = { filetypes = { "html", "twig", "hbs" } },
+	lua_ls = {
+		Lua = {
+			workspace = { checkThirdParty = false },
+			telemetry = { enable = false },
+			diagnostics = { disable = { "missing-fields", "missing-parameters" } },
+		},
+	},
+}
+
 local lang_tools = { "stylua", "black", "prettier" }
 
 return {

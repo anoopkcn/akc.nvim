@@ -24,9 +24,10 @@ return {
 		vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 		vim.keymap.set("n", "<leader>fj", builtin.jumplist, {})
 		vim.keymap.set("n", "<leader>fr", builtin.registers, {})
-		vim.keymap.set("n", "<leader>fm", builtin.marks, {})
-		vim.keymap.set("n", "<space>/", builtin.current_buffer_fuzzy_find) -- git related
-		vim.keymap.set("n", "<leader>gs", builtin.git_status, {}) -- This is handled by Fugitive
+		-- vim.keymap.set("n", "<leader>fm", builtin.marks, {})
+		vim.keymap.set("n", "<leader>fd", builtin.diagnostics, {})
+		vim.keymap.set("n", "<space>/", builtin.current_buffer_fuzzy_find)
+		vim.keymap.set("n", "<leader>gs", builtin.git_status, {})
 		vim.keymap.set("n", "<leader>gc", builtin.git_commits, {})
 		vim.keymap.set("n", "<leader>gb", builtin.git_branches, {})
 		vim.keymap.set("n", "<leader>gl", builtin.git_bcommits, {})

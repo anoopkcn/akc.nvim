@@ -33,4 +33,7 @@ return {
 		enabled = true,
 		opts = {},
 	},
+	-- {
+	-- 	"mg979/vim-visual-multi",
+	-- },
 }
